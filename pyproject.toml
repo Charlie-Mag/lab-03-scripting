@@ -1,17 +1,15 @@
 [project]
-name = "lab-03-scripting"
+name = "ghevents"
 version = "0.1.0"
-description = "Add your description here"
+description = "Parse GH events"
 readme = "README.md"
 authors = [
     { name = "Charlie Magruder", email = "rer7ay@virginia.edu" }
 ]
 requires-python = ">=3.11"
-dependencies = []
-
-[project.scripts]
-lab-03-scripting = "lab_03_scripting:main"
-
+dependencies = [
+    "requests>=2.34.2",
+]
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
